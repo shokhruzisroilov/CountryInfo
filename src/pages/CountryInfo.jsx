@@ -19,16 +19,16 @@ function CountryInfo() {
 		dataFilter.map((data, id) => {
 			return (
 				<React.Fragment key={id}>
-					<div className='sm:px-20 px-4'>
+					<div className='bg-bgBlack min-h-[100vh] pt-20 sm:px-20 px-4'>
 						<Link to='/'>
-							<button className='w-[136px] h-10 bg-primary flex items-center justify-center gap-x-[10px] my-20 rounded-[6px] drop-shadow-[0px_0px_7px_10px_rgba(0, 0, 0, 0.29)] text-white text-[16px] leading-[20] font-normal'>
+							<button className='w-[136px] h-10 bg-primary flex items-center justify-center gap-x-[10px] rounded-[6px] drop-shadow-[0px_0px_7px_10px_rgba(0, 0, 0, 0.29)] text-white text-[16px] leading-[20] font-normal'>
 								<span>
 									<img src={backArrow} alt='back arrow' />
 								</span>
 								Back
 							</button>
 						</Link>
-						<div className='flex md:flex-row flex-col gap-y-10 justify-center lg:gap-x-[120px] gap-x-10 md:items-center sm:items-start items-center mb-20'>
+						<div className='flex md:flex-row flex-col gap-y-10 justify-center lg:gap-x-[120px] gap-x-10 md:items-center sm:items-start items-center pt-20'>
 							<img
 								src={data.flags.png}
 								alt='country img'
